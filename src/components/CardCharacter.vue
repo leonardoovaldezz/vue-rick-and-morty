@@ -1,7 +1,8 @@
 <template>
   <div class="character">
+    <img :src="character.image" alt="character.name" />
     <div class="character__info">
-      {{ character.name }}
+      <h3>{{ character.name }}</h3>
     </div>
   </div>
 </template>
