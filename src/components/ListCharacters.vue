@@ -25,7 +25,7 @@ export default {
   setup() {
     const store = useStore();
     const characters = computed(() => {
-      return store.state.charactersFilter;
+      return store.getters.paginatedCharacters; // Use paginatedCharacters instead of charactersFilter
     });
 
     onMounted(() => {

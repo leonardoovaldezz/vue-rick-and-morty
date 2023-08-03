@@ -1,13 +1,13 @@
 <template>
   <div class="filter">
-    <div class="item" @click="filter('')">All</div>
-    <div class="item" @click="filter('Alive')">Alive</div>
-    <div class="item" @click="filter('Dead')">Dead</div>
-    <div class="item" @click="filter('unknown')">Unknown</div>
+    <div class="item" @click="filter('')">Todos</div>
+    <div class="item" @click="filter('Alive')">Vivos</div>
+    <div class="item" @click="filter('Dead')">Muertos</div>
+    <div class="item" @click="filter('unknown')">Desconocidos</div>
   </div>
 </template>
   
-  <script>
+<script>
 import { useStore } from "vuex";
 export default {
   setup() {
@@ -24,7 +24,7 @@ export default {
 };
 </script>
   
-  <style lang="scss">
+<style lang="scss">
 .filter {
   width: 400px;
   margin: 0 auto;

@@ -3,6 +3,7 @@
     <h1>Rick And Morty</h1>
     <FilterByStatus />
     <FilterByName />
+    <Pagination />
     <ListCharacters />
   </div>
 </template>
@@ -11,12 +12,15 @@
 import ListCharacters from "@/components/ListCharacters";
 import FilterByStatus from "@/components/FilterByStatus";
 import FilterByName from "@/components/FilterByName";
+import Pagination from "@/components/Pagination"; // Import the Pagination component
+
 export default {
   name: "App",
   components: {
     ListCharacters,
     FilterByStatus,
     FilterByName,
+    Pagination, // Add the Pagination component to the components list
   },
 };
 </script>
