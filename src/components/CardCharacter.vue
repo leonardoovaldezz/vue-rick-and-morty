@@ -30,17 +30,17 @@
     </div>
   </div>
 </template>
-  
-  <script>
+
+<script>
 export default {
   props: ["character"],
 };
 </script>
-  
-  <style lang="scss">
+
+<style lang="scss">
 .character {
   background-color: var(--background-card);
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0 0 10px 1px var(--background-body);
   overflow: hidden;
   cursor: pointer;
@@ -59,7 +59,7 @@ export default {
     margin-bottom: 0.5rem;
   }
   &__info {
-    padding: 1rem;
+    padding: 1.5rem;
     .status {
       display: flex;
       align-items: center;

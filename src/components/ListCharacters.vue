@@ -11,12 +11,14 @@
     </div>
   </section>
 </template>
-  
-  <script>
+
+<script>
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
+
 import CardCharacter from "@/components/CardCharacter";
 export default {
+  name: "Characters",
   components: {
     CardCharacter,
   },
@@ -36,13 +38,12 @@ export default {
   },
 };
 </script>
-  
+
 <style lang="scss">
 .characters {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   margin: 3rem 0;
-  justify-content: center;
 }
 </style>
