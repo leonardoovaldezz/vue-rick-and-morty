@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h1>Rick and Morty</h1>
+  <div class="container">
+    <h1>Rick And Morty</h1>
     <FilterByStatus />
+    <FilterByName />
     <ListCharacters />
   </div>
 </template>
@@ -9,11 +10,13 @@
 <script>
 import ListCharacters from "@/components/ListCharacters";
 import FilterByStatus from "@/components/FilterByStatus";
+import FilterByName from "@/components/FilterByName";
 export default {
   name: "App",
   components: {
     ListCharacters,
     FilterByStatus,
+    FilterByName,
   },
 };
 </script>
